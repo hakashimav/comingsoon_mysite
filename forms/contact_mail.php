@@ -2,9 +2,9 @@
 $toEmail = "michmav28@gmail.com";
 $mailHeaders = "From: " . $_POST["userName"] . "<". $_POST["userEmail"] .">\r\n";
 if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
-print "<p class='success'>Contact Mail Sent.</p>";
+print "<p class='succes'>Votre message a  été envoyé. Merci!</p>";
 } else {
-print "<p class='Error'>Problem in Sending Mail.</p>";
+print "<P class='error'>Erreur message non envoyer!</P>";
 }
 ?>
 <script>
